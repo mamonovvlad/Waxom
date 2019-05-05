@@ -1,0 +1,190 @@
+.delit {
+  display: none; }
+
+.projects-buttons {
+  text-align: center;
+  padding: 0px 5px; }
+
+.blocks-projects,
+.blocks-project {
+  flex-wrap: wrap;
+  margin-top: 40px; }
+
+.autoplay .blocks-projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px; }
+
+.block-projects {
+  padding: 0 15px;
+  max-width: 100%;
+  width: 50%;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  outline: none; }
+  .block-projects:hover .block-projects__hover {
+    display: block; }
+  .block-projects__img {
+    position: relative;
+    transition: 500ms ease;
+    max-height: 220px;
+    overflow: hidden; }
+    .block-projects__img img {
+      width: 100%;
+      max-height: 220px;
+      overflow: hidden;
+      transition: 500ms ease; }
+  .block-projects:hover figure:before, .block-projects:hover .slider-two__img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: 500ms ease; }
+  .block-projects__text {
+    box-sizing: border-box;
+    background-color: #fbfaf8;
+    padding: 25px;
+    transition: 500ms ease;
+    margin-top: -2px; }
+  .block-projects:hover .block-projects__text {
+    background-color: #362f2d;
+    transition: 500ms ease; }
+  .block-projects__title {
+    color: #c7b299;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    transition: 500ms ease; }
+  .block-projects:hover .block-projects__title {
+    color: #fff;
+    transition: 500ms ease; }
+  .block-projects__small {
+    color: #d1d1d1;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    transition: 500ms ease; }
+  .block-projects:hover .block-projects__small {
+    color: #c7b299;
+    transition: 500ms ease; }
+  .block-projects__hover__link {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background: url(../img/projects/link1.svg) center center no-repeat;
+    width: 28px;
+    height: 28px;
+    z-index: 1001;
+    transition: 200ms ease; }
+    .block-projects__hover__link:hover {
+      background: url(../img/projects/link.svg) center center no-repeat;
+      transition: 500ms ease;
+      width: 30px;
+      height: 30px;
+      transition: 200ms ease; }
+  .block-projects__hover__lupa {
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    background: url(../img/projects/lupa.svg) center center no-repeat;
+    width: 28px;
+    height: 28px;
+    z-index: 1001;
+    transition: 200ms ease; }
+    .block-projects__hover__lupa:hover {
+      background: url(../img/projects/lupa1.svg) center center no-repeat;
+      transition: 500ms ease;
+      width: 30px;
+      height: 30px;
+      transition: 200ms ease; }
+
+.blocks-project .block-projects__img:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  background: url(../img/projects/arrow.svg) center center no-repeat;
+  z-index: 1000;
+  top: 96%;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+  transition: 500ms ease; }
+
+.blocks-project .block-projects:hover .block-projects__img:after {
+  background: url(../img/projects/arrowhover.svg) center center no-repeat;
+  transition: 500ms ease; }
+
+.autoplay .block-projects__text {
+  background-color: #fff; }
+.autoplay .block-projects__date {
+  position: absolute;
+  top: 5%;
+  margin-left: 20px;
+  z-index: 1000; }
+  .autoplay .block-projects__date__number {
+    padding: 10px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    border-radius: 3px 3px 0 0;
+    background-color: #363636;
+    transition: 500ms ease; }
+  .autoplay .block-projects__date__month {
+    padding: 7px 10px;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 0 0 3px 3px;
+    background-color: #252525;
+    text-align: center;
+    transition: 500ms ease; }
+.autoplay .block-projects:hover .block-projects__date__number {
+  background-color: #c7b299;
+  transition: 500ms ease; }
+.autoplay .block-projects:hover .block-projects__date__month {
+  background-color: #a48d72;
+  transition: 500ms ease; }
+.autoplay .block-projects__title {
+  color: #555555;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 500; }
+.autoplay .block-projects:hover .block-projects__title {
+  color: #c7b299;
+  transition: 500ms ease; }
+.autoplay .block-projects__small {
+  font-family: "Montserrat", sans-serif;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-bottom: 27px; }
+.autoplay .block-projects:hover .block-projects__small {
+  color: #fff;
+  transition: 500ms ease; }
+.autoplay .block-projects a {
+  color: #c7b299;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px; }
+.autoplay .block-projects i {
+  color: #c7b299;
+  font-size: 12px; }
+
+.slider-two__img {
+  background-size: cover;
+  background-position: center center;
+  height: 220px;
+  width: 100%; }
+
+/*# sourceMappingURL=projects.css.map */

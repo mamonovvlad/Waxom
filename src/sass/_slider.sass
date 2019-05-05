@@ -1,0 +1,87 @@
+.slick
+	&-prev 
+		left: 60px
+		z-index: 1000
+	&-next 
+		right: 60px
+		z-index: 1000
+
+.slid button.slick-prev.slick-arrow
+	background: url(../img/header/left.svg) center center no-repeat
+	width: 60px
+	height: 60px
+	display: block
+	transition: 500ms ease
+		
+.slid button.slick-next.slick-arrow
+	background: url(../img/header/right.svg) center center no-repeat
+	width: 60px
+	height: 60px
+	display: block
+	transition: 500ms ease
+.slid .slick-dots 
+	z-index: 4
+	transition: 500ms ease
+	& li
+		width: 11px
+		height: 11px
+		border-radius: 50%
+		background-color: #908e8f
+		opacity: 0.7
+.single-item ul li.slick-active
+	border: 2px solid #d3c1ad
+	width: 15px
+	height: 15px
+	background-color: transparent
+	border-radius: 50%
+	box-sizing: border-box
+.slick-dotted.slick-slider 
+	margin-bottom: 0px
+.slick-track img
+	background-size: cover
+.autoplay .slick
+	&-prev 
+		left: 50%
+		top: 100%
+		transform: translateX(-25px)
+		z-index: 1000
+	&-next 
+		right: 50%
+		top: 100%
+		transform: translateX(25px)
+		z-index: 1000
+		
+.autoplay button.slick-next.slick-arrow
+	background: url(../img/projects/right.svg) center center no-repeat
+	width: 22px
+	height: 22px
+	transition: 500ms ease
+	&:hover
+		background: url(../img/projects/right-activ.svg) center center no-repeat
+		width: 22px
+		height: 22px
+		transition: 500ms ease
+	
+.autoplay button.slick-prev.slick-arrow
+	background: url(../img/projects/left.svg) center center no-repeat
+	width: 22px
+	height: 22px
+	transition: 500ms ease
+	&:hover
+		background: url(../img/projects/left-activ.svg) center center no-repeat
+		width: 22px
+		height: 22px
+		transition: 500ms ease
+.slider-two .slick-dots
+	top: 85%
+	& li 
+		width: 11px
+		height: 11px
+		background-color: #ffffff
+		opacity: 0.3
+		border-radius: 50%
+.slider-two ul li.slick-active 
+	width: 15px
+	height: 15px
+	border: 2px solid #d3c1ad
+	background-color: transparent
